@@ -1,0 +1,108 @@
+@charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100vh;
+}
+
+:root{
+    --fonte-cabecalho: 'Passion One', cursive;
+    --fonte-do-poema: 'Sriracha', cursive;
+    --fonte-do-rodape: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ********************************************************************************************************************************************** */
+                                                    /* Codificação da estilização da nossa página*/
+
+/* Estilização do nosso header: */
+header{
+    color: white;
+    background-color: black;
+    font-family: var(--fonte-do-rodape);
+    text-align: center;
+    padding: 48px;
+}
+
+header > h1{
+    font-family: var(--fonte-cabecalho);
+    font-weight: 700;
+    font-size: 10vw; /* Ocupa 10% do view width, é como usar o vh só que para a largura */
+    font-variant: small-caps; /* Deixa as letras maiúsculas num padrãozinho mais bonito */
+}
+
+header > p > a{
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header > p > a:hover{
+    text-decoration: underline;
+}
+
+/* ********************************************************************************************************************************************** */
+                                               /* Estilização das sections e corpo da página principal:   */                                               
+section{
+     padding-top: 10vh; /*Faz com que o espaçamento do top entre o conteúdo e o elemento seja 10% do tamanho da tela */
+     padding-bottom: 10vh; /*Faz com que o espaçamento do bottom entre o conteúdo e o elemento seja 10% do tamanho da tela */
+     line-height: 2em;
+     padding-left: 30px;
+     font-family: var(--fonte-do-poema);
+     font-size: 3.5vw;
+}
+
+section > p{
+    padding-bottom: 2em; /* Dando um espaçamento entre os bottons entre elementos de parágrafo */
+}
+
+
+section.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.450);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    color: white;
+    display: inline-block; /*Faz com que o bloco seja exatamente do tamanho do elemento*/
+    background-color: rgba(0, 0, 0, 0.500);
+    padding: 5px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section#flor{
+    background-image: url(./01-imgs/bg1.jpg);
+}
+
+section#folha-escrita{
+    background-image: url(./01-imgs/bg2.jpg);
+}
+
+
+/* ********************************************************************************************************************************************** */
+                                                    /* Estilização do rodapé da nossa página */
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-family: var(--fonte-do-rodape);
+    padding: 10px;
+}
+
+footer > p > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer > p > a:hover{
+    text-decoration: underline;
+}
